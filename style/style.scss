@@ -4,3 +4,13 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+@font-face {
+    font-family: 'jf-openhuninn';
+    src: url('../font/jf-openhuninn-1.1.ttf') format('truetype');
+}
+
+body {
+    font-family: jf-openhuninn;
+    background-color: #7e9cd8;
+}
