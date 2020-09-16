@@ -12,5 +12,75 @@
 
 body {
     font-family: jf-openhuninn;
-    background-color: #7e9cd8;
+    background-color: transparent;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.site__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.site__title {
+    padding: 1em;
+    h1 {font-size: 1.2em;
+        color: #49515d;
+        & > span {color: #2eca7f;}
+    }
+}
+
+.site__nav {
+    display: flex;
+    align-items: flex-end;
+    padding: 1em;
+    & a {
+        color: #49515d;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 10px;
+        &:hover {
+            background-color: #2eca7f;
+            color: white;
+        }
+    }
+}
+
+.homepage__content{
+    border: 1px solid blue;
+    border-radius: 20px;
+}
+
+.content{
+    background-color: #2eca7f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+.content__img{
+    border: 1px solid red;
+    padding: 3px;
+    background-color: white;
+    max-width: 280px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover {
+        transform: scaleY();
+    }
+}
+
+.content__title{
+    border: 1px solid red;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    h1 {
+        margin: 1em;
+        font-size: 2em;
+        color: white;
+    }
 }
