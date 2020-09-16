@@ -55,16 +55,20 @@ body {
   text-decoration: none;
   font-size: 1em;
   padding: 10px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
 }
 
 .site__nav a:hover {
   background-color: #2eca7f;
+  border-radius: 10px;
   color: white;
 }
 
 .homepage__content {
   border: 1px solid blue;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .content {
@@ -77,14 +81,47 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px;
+  padding: 40px 40px 0px;
+}
+
+.content__title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__title h1 {
+  margin-top: 1em;
+  font-size: 2.5em;
+  color: white;
+}
+
+.content__title h2 {
+  font-size: 1em;
+  color: lightblue;
+  padding: 20px;
 }
 
 .content__img {
-  border: 1px solid red;
+  -webkit-box-shadow: 5px 5px 10px #adadad;
+          box-shadow: 5px 5px 10px #adadad;
   padding: 3px;
   background-color: white;
   max-width: 280px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
 }
 
 .content__img img {
@@ -93,26 +130,21 @@ body {
 }
 
 .content__img:hover {
-  -webkit-transform: scaleY();
-          transform: scaleY();
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-box-shadow: 10px 20px 20px #adadad;
+          box-shadow: 10px 20px 20px #adadad;
 }
 
-.content__title {
-  border: 1px solid red;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.icon {
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
 }
 
-.content__title h1 {
-  margin: 1em;
-  font-size: 2em;
-  color: white;
+.icon:hover {
+  background-color: gray;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
