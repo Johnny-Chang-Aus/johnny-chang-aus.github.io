@@ -38,6 +38,11 @@ body footer {
   bottom: 0;
   left: 0;
   right: 0;
+  display: block;
+}
+
+.site__header {
+  height: 100px;
 }
 
 .site__content {
@@ -50,7 +55,7 @@ body footer {
 }
 
 .site__title {
-  padding: 1em;
+  padding: 2em;
 }
 
 .site__title h1 {
@@ -69,7 +74,7 @@ body footer {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 1em;
+  padding: 2em;
 }
 
 .site__nav a {
@@ -87,14 +92,14 @@ body footer {
   color: white;
 }
 
-.homepage__content {
+.page__content {
   border-radius: 20px;
   overflow: hidden;
   -webkit-box-shadow: 0px 20px 40px 10px #ddd;
           box-shadow: 0px 20px 40px 10px #ddd;
 }
 
-.content {
+.page__header {
   background-color: #2eca7f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,10 +109,12 @@ body footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 4em 4em 0em 4em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.content__title {
+.page__header__title {
   padding: 20px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -122,38 +129,45 @@ body footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 60%;
 }
 
-.content__title h1 {
-  margin-top: 1em;
+.page__header__title h1 {
+  margin-top: 0em;
   font-size: 2.5em;
   color: white;
 }
 
-.content__title h2 {
+.page__header__title h2 {
   font-size: 1em;
   color: white;
   padding: 20px;
 }
 
-.content__img {
+.page__header__img {
+  margin-top: 4em;
+  margin-left: 0em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-shadow: 0px 5px 10px #adadad;
           box-shadow: 0px 5px 10px #adadad;
   padding: 3px;
   background-color: white;
   max-width: 280px;
+  max-height: 280px;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
 }
 
-.content__img img {
+.page__header__img img {
   width: 100%;
   height: 100%;
 }
 
-.content__img:hover {
+.page__header__img:hover {
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
   -webkit-box-shadow: 10px 20px 20px #adadad;
