@@ -5,7 +5,8 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 900px;
+  justify-content: space-around ;
+  margin: 3em 0em;
 }
 
 .card {
