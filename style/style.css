@@ -12,7 +12,7 @@
 }
 
 a {
-  color: #2eca7f;
+  color: lightblue;
   text-decoration: none;
   outline: none;
   -webkit-transition: all .3s ease-in-out;
@@ -72,7 +72,7 @@ body footer .copyrights {
 }
 
 .site__title h1 > span {
-  color: #2eca7f;
+  color: lightblue;
 }
 
 .site__nav {
@@ -95,7 +95,7 @@ body footer .copyrights {
 }
 
 .site__nav a:hover {
-  background-color: #2eca7f;
+  background-color: lightblue;
   border-radius: 10px;
   color: white;
 }
@@ -108,7 +108,7 @@ body footer .copyrights {
 }
 
 .page__header {
-  background-color: #2eca7f;
+  background-color: lightblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,7 +212,7 @@ span.icons > img {
 }
 
 span.icons.icon {
-  background-color: #2eca7f;
+  background-color: lightblue;
 }
 
 .info {
@@ -243,7 +243,7 @@ span.icons.icon {
 }
 
 .info__aboutme h1 > span {
-  color: #2eca7f;
+  color: lightblue;
 }
 
 .info__aboutme p {
@@ -252,7 +252,7 @@ span.icons.icon {
 }
 
 .info__icon {
-  background-color: #2eca7f;
+  background-color: lightblue;
 }
 
 .info__title {
