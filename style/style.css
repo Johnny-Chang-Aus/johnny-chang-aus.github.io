@@ -41,6 +41,14 @@ body footer {
   display: block;
 }
 
+body footer .copyrights {
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 12px;
+  color: #9e9e9e;
+}
+
 .site__header {
   height: 100px;
 }
@@ -112,6 +120,7 @@ body footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 135px;
 }
 
 .page__header__title {
@@ -202,7 +211,12 @@ span.icons > img {
   height: 80%;
 }
 
+span.icons.icon {
+  background-color: #2eca7f;
+}
+
 .info {
+  padding: 2em;
   font-size: .8em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,8 +229,7 @@ span.icons > img {
 }
 
 .info__aboutme {
-  padding: 4em 4em 2em 4em;
-  min-width: 375px;
+  padding: 2em 2em 0em 2em;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -236,6 +249,24 @@ span.icons > img {
 .info__aboutme p {
   padding-top: 1em;
   line-height: 24px;
+}
+
+.info__icon {
+  background-color: #2eca7f;
+}
+
+.info__title {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0em 1em;
+}
+
+.info__half {
+  margin: 0em 1em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 350px;
 }
 
 .info__contacts {
@@ -266,14 +297,6 @@ span.icons > img {
 
 .info__list li .value {
   display: inline-block;
-  color: #9e9e9e;
-}
-
-.copyrights {
-  display: block;
-  margin-bottom: 12px;
-  text-align: center;
-  font-size: 12px;
   color: #9e9e9e;
 }
 /*# sourceMappingURL=style.css.map */
