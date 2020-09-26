@@ -1,4 +1,4 @@
-.container {
+.cards__container {
 	font-family: 'Rubik', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,7 +6,6 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   justify-content: space-around ;
-  margin: 3em 0em;
 }
 
 .card {
@@ -43,6 +42,8 @@
 .card.lg {
   width: 340px;
   height: 400px;
+  margin: 20px;
+  padding: 0px;
 }
 
 .card.xl {
@@ -401,7 +402,8 @@
   height: 40px;
   position: absolute;
   bottom: 40px;
-  right: 115px;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .btn.wide {

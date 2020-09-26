@@ -3,216 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a full-stack web Developer who providing branding and corporate image website Services. Contact for more information.">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="..\style\style.css">
     <link rel="stylesheet" type="text/css" href="..\style/style_card.css">
     <link rel="icon" href="image\favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <title>Welcome to Johnny's website!!</title>
 </head>
 <body>
-    <header id="site_header" class="site_header">
-        <div class="site__content">
+    <!-- header and top navbar -->
+    <header id="site__header" class="site__header">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top site__content">
             <div class="site__title">
                 <h1>Johnny <span>Chang</span></h1>
             </div>
-            <div class="site__nav">
-                <nav class="site__main__menu">
-                    <a href="..\index.html" class="">Home</a>
-                    <a href="..\resume.html" class="">Resume</a>
-                    <a href="..\service.html" class="">Services</a>
-                    <a href="..\blog.html" class="">Blog</a>
-                    <a href="..\contact.html" class="">Contact</a>
-                </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="..\index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\resume.html">Rusume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </header>
+        </nav>
+    <!-- page content -->
     <div class="page__content">
         <div class="page__header">
             <div class="page__header__title">
-                <h1>blog</h1>
+                <h1>Blog</h1>
             </div>
         </div>
-        <div class="container">
-            <!-- toledo card starts  -->
-            <div class="card md">
-                <div class="card__image ht190">
-                    <img class="center" src="image\toledo_spain.jpg" alt="toledo">
-                </div>
-                <div class="card__text sm">
-                    <h1 class="bk">Toledo, Spain</h1>
-                    <h2 class="gr">Also known as The Imperial City.</h2>
-                </div>
-                <div class="icon__heart">
-                        <img src="icon\iconfinder_heart_2561448.png" alt="heart"/>
-                </div>
-                <div class="card__label right blue">
-                    <p>SPAIN</p>
-                </div>
-            </div>
-            <!-- toledo card ends -->
-            <!-- boli gardens card starts -->
-            <div class="card md">
-                <div class="card__mask gray">
-                    <div class="icon__play">
-                        <img src="icon\icon-combined-shape.svg" alt="play"/>
-                    </div>
-                </div>
-                <img src="image\florence-386231_1920.jpg"/>
-                <div class="card__text md">
-                    <h1>Bobli Gardens</h1>
-                    <h2>Florence, Italy</h2>
-                </div>
-                <div class="card__label right red">
-                    <p class="card__label__name">ITALY</p>
-                </div>
-                <div class="icon__more down">
-                    <img src="icon\icon_more.svg" alt="more"/>
-                </div>
-            </div>
-            <!-- boli gardens card ends -->
-            <!-- burano island card starts -->
-            <div class="card md">
-                <img src="image\burano-2349300_1920.jpg"/>
-                <div class="card__text md">
-                    <h1>Burano Island</h1>
-                    <h2>Burano, Venice, Italy</h2>
-                    <div class="reviews">
-                        <span class="star">
-                            <span style="width: 52px"></span>
-                        </span>
-                        420 reviews
-                    </div>
-                </div>
-                <div class="icon__more down">
-                    <img src="icon\icon_more.svg" alt="more"/>
-                </div>
-                <div class="card__label right red">
-                    <p class="card__label__name">ITALY</p>
-                </div>
-            </div>
-            <!-- burano island card ends -->
-            <!-- upload trip card starts -->
-            <div class="card md">
-                <div class="sub__container">
-                    <div class="icon__upload">
-                        <img src="icon\icon_upload.png" alt="upload"/>
-                    </div>
-                    <div class="card__text centersm">
-                        <h1>Upload a new trip</h1>
-                        <h2>Drag a file to attach or</h2>
-                        <h3>browse</h3>
-                    </div>
-                </div>
-            </div>
-            <!-- upload trip card ends -->
-            <!-- the colosseum card starts -->
-            <div class="card md">
-                <img src="image\bg-4.png"/>
-                <div class="card__text md">
-                    <h1>The Colosseum</h1>
-                    <h2>Rome, Italy</h2>
-                </div>
-                <div class="card__label left red">
-                    <p class="card__label__name">ITALY</p>
-                </div>
-                <div class="icon__more up">
-                    <img src="icon\icon_menu_vertical.png" alt="more-vertical"/>
-                </div>
-            </div>
-            <!-- the colosseum card ends -->
-            <!-- vatican city card starts -->
-            <div class="card md">
-                <div class="card__mask underline-bl"></div>
-                <img src="image\bg-5.png"/>
-                <div class="card__text md">
-                    <h1>Vatican City</h1>
-                    <h2>Vatican</h2>
-                    <button class="btn lg zero">View Trip 🡢</button>
-                </div>
-                <div class="card__label left blue">
-                    <p class="card__label__name">VATICAN</p>
-                </div>
-                <div class="icon__more up">
-                    <img src="icon\icon_menu_vertical.png" alt="more-vertical"/>
-                </div>
-            </div>
-            <!-- vatican city card ends -->
-            <!-- venice islands large card starts -->
-            <div class="card lg">
+        <div class="cards__container">
+            <!-- blog card starts -->
+            <div class="card lg col-md-5">
                 <div class="card__image ht170">
-                    <img class="center" src="image\bg-3.png" alt="venice-islands">
+                    <img class="center" src="image\jack-b-9Rgw6JpiyZ0-unsplash.jpg" alt="card image">
                 </div>
                 <div class="card__text md-gr">
-                    <h1 class="bk">Venice Islands</h1>
+                    <h1 class="bk">Blog Title</h1>
                     <div class="card__text article">
                         <div class="card__mask grayout"></div>
-                        <p>Venice is a city in northeastern Italy and the capital of the Veneto region. It is on a group of 118 small islands that are separated by canals and linked by over 400 bridges, of which there are 400. The islands are located in the shallow Venetian Lagoon, an enclosed bay that lies between the mouths of the Po and the Piave rivers. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae molestias expedita officiis obcaecati ut neque quo dolore cum ex quis sapiente impedit porro, ea saepe voluptate cupiditate repudiandae, excepturi praesentium.</p>
                     </div>
                 </div>
                 <div class="card__label right red">
-                    <p>ITALY</p>
+                    <p>blog tag</p>
                 </div>
-                <button class="btn lg blue round">View more</button>
+                <button class="btn lg blue round">Read More</button>
             </div>
-            <!-- venice islands large card ends -->
-            <!-- monuments card starts -->
-            <div class="card lg">
+            <!-- blog card card ends -->
+            <!-- blog card starts -->
+            <div class="card lg col-md-5">
                 <div class="card__image ht170">
-                    <img src="image\monuments.jpg" alt="" class="center">
-                    <div class="card__mask gray">
-                        <div class="icon__play">
-                            <img src="icon\icon-combined-shape.svg" alt="play"/>
-                        </div>
-                    </div>
+                    <img class="center" src="image\jack-b-9Rgw6JpiyZ0-unsplash.jpg" alt="card image">
                 </div>
                 <div class="card__text md-gr">
-                    <h1 class="bk">Monuments in Florence</h1>
-                    <p>A quick journey into Florence's most importan monuments.</p>
-                </div>
-                <div class="card__icons two-icons">
-                    <img src="icon\icon-forward.svg" alt="forward">
-                    <img src="icon\icon-heart.svg" alt="heart">
-                </div>
-                <button class="btn blue wide lg">View trip detail</button>
-            </div>
-            <!-- monuments card ends -->
-            <!-- burano lg card starts -->
-            <div class="card lg">
-                <img src="image\bg-1.png" alt="burano">
-                <div class="card__mask gray underline-rd"></div>
-                <div class="card__text md">
-                    <h1>Burano Doors</h1>
-                    <h2>Burano, Venice, Italy</h2>
-                </div>
-                <div class="card__icons top right">
-                    <img src="icon\icon-heart.svg" alt="icon_heart">
-                </div>
-            </div>
-            <!-- burano lg card ends -->
-            <!-- card starts -->
-            <div class="card__ss">
-                <img src="image\bg-6.png" alt="Door">
-                <div class="card__icons top right">
-                    <img src="icon\icon-heart.svg" alt="icon_heart">
-                </div>
-                <div class="card sm--row card__text md-gr down">
-                    <div class="reviews">
-                        <span class="star">
-                            <span style="width: 52px"></span>
-                        </span>
-                        420 reviews
+                    <h1 class="bk">Blog Title</h1>
+                    <div class="card__text article">
+                        <div class="card__mask grayout"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae molestias expedita officiis obcaecati ut neque quo dolore cum ex quis sapiente impedit porro, ea saepe voluptate cupiditate repudiandae, excepturi praesentium.</p>
                     </div>
-                    <h1>The Blue House</h1>
-                    <h2>Burano, Venice, Italy</h2>
-                    <h3>$250 per night</h3>
-                    <button class="btn sm blue circle">🡢</button>
                 </div>
-            </div><!-- card ends -->
+                <div class="card__label right red">
+                    <p>blog tag</p>
+                </div>
+                <button class="btn lg blue round">Read More</button>
+            </div>
+            <!-- blog card card ends -->
+            <!-- blog card starts -->
+            <div class="card lg col-md-5">
+                <div class="card__image ht170">
+                    <img class="center" src="image\jack-b-9Rgw6JpiyZ0-unsplash.jpg" alt="card image">
+                </div>
+                <div class="card__text md-gr">
+                    <h1 class="bk">Blog Title</h1>
+                    <div class="card__text article">
+                        <div class="card__mask grayout"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae molestias expedita officiis obcaecati ut neque quo dolore cum ex quis sapiente impedit porro, ea saepe voluptate cupiditate repudiandae, excepturi praesentium.</p>
+                    </div>
+                </div>
+                <div class="card__label right red">
+                    <p>blog tag</p>
+                </div>
+                <button class="btn lg blue round">Read More</button>
+            </div>
+            <!-- blog card card ends -->
+            <!-- blog card starts -->
+            <div class="card lg col-md-5">
+                <div class="card__image ht170">
+                    <img class="center" src="image\jack-b-9Rgw6JpiyZ0-unsplash.jpg" alt="card image">
+                </div>
+                <div class="card__text md-gr">
+                    <h1 class="bk">Blog Title</h1>
+                    <div class="card__text article">
+                        <div class="card__mask grayout"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae molestias expedita officiis obcaecati ut neque quo dolore cum ex quis sapiente impedit porro, ea saepe voluptate cupiditate repudiandae, excepturi praesentium.</p>
+                    </div>
+                </div>
+                <div class="card__label right red">
+                    <p>blog tag</p>
+                </div>
+                <button class="btn lg blue round">Read More</button>
+            </div>
+            <!-- blog card card ends -->
+            <!-- blog card starts -->
+            <div class="card lg col-md-5">
+                <div class="card__image ht170">
+                    <img class="center" src="image\jack-b-9Rgw6JpiyZ0-unsplash.jpg" alt="card image">
+                </div>
+                <div class="card__text md-gr">
+                    <h1 class="bk">Blog Title</h1>
+                    <div class="card__text article">
+                        <div class="card__mask grayout"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae molestias expedita officiis obcaecati ut neque quo dolore cum ex quis sapiente impedit porro, ea saepe voluptate cupiditate repudiandae, excepturi praesentium.</p>
+                    </div>
+                </div>
+                <div class="card__label right red">
+                    <p>blog tag</p>
+                </div>
+                <button class="btn lg blue round">Read More</button>
+            </div>
+            <!-- blog card card ends -->
+            <!-- blog card starts -->
+            <div class="card lg col-md-5">
+                <div class="card__image ht170">
+                    <img class="center" src="image\jack-b-9Rgw6JpiyZ0-unsplash.jpg" alt="card image">
+                </div>
+                <div class="card__text md-gr">
+                    <h1 class="bk">Blog Title</h1>
+                    <div class="card__text article">
+                        <div class="card__mask grayout"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae molestias expedita officiis obcaecati ut neque quo dolore cum ex quis sapiente impedit porro, ea saepe voluptate cupiditate repudiandae, excepturi praesentium.</p>
+                    </div>
+                </div>
+                <div class="card__label right red">
+                    <p>blog tag</p>
+                </div>
+                <button class="btn lg blue round">Read More</button>
+            </div>
+            <!-- blog card card ends -->
+            <!-- blog card starts -->
+            <div class="card lg col-md-5">
+                <div class="card__image ht170">
+                    <img class="center" src="image\jack-b-9Rgw6JpiyZ0-unsplash.jpg" alt="card image">
+                </div>
+                <div class="card__text md-gr">
+                    <h1 class="bk">Blog Title</h1>
+                    <div class="card__text article">
+                        <div class="card__mask grayout"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae molestias expedita officiis obcaecati ut neque quo dolore cum ex quis sapiente impedit porro, ea saepe voluptate cupiditate repudiandae, excepturi praesentium.</p>
+                    </div>
+                </div>
+                <div class="card__label right red">
+                    <p>blog tag</p>
+                </div>
+                <button class="btn lg blue round">Read More</button>
+            </div>
+            <!-- blog card card ends -->
         </div>
     </div>
     <footer>
         <span class="copyrights">© 2020 All rights reserved. Designed by <a href="#">J.Chang</a>
         </span>
     </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

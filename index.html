@@ -3,33 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a full-stack web Developer who providing branding and corporate image website Services. Contact for more information.">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="..\style\style.css">
     <link rel="icon" href="image\favicon.ico" type="image/x-icon" />
     <title>Welcome to Johnny's website!!</title>
 </head>
 <body>
+    <!-- header and top navbar -->
     <header id="site__header" class="site__header">
-        <div class="site__content">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top site__content">
             <div class="site__title">
                 <h1>Johnny <span>Chang</span></h1>
             </div>
-            <div class="site__nav">
-                <nav class="site__main__menu">
-                    <a href="..\index.html" class="">Home</a>
-                    <a href="..\resume.html" class="">Resume</a>
-                    <a href="..\service.html" class="">Services</a>
-                    <a href="..\blog.html" class="">Blog</a>
-                    <a href="..\contact.html" class="">Contact</a>
-                </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="..\index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\resume.html">Rusume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+    <!-- page content -->
     </header>
     <div class="page__content">
-        <div class="page__header">
-            <div class="page__header__img">
-                <img src="image\johnny.png" alt="Johnn's photo">
+        <div class="page__header row">
+            <div class="page__header__img col-sm-3">
+                <img src="image\johnny.png" alt="Johnny's photo">
             </div>
-            <div class="page__header__title">
+            <div class="page__header__title col-sm-6">
                 <h1>Johnny Chang</h1>
                 <h2>Full Stack Developer</h2>
                 <div class="page__header__icon">
@@ -41,17 +59,17 @@
                 </div>
             </div>
         </div>
-        <div class="info">
-            <div class="info__aboutme">
+        <div class="info row">
+            <div class="info__aboutme col-md-6">
                 <h1>About <span>Me</span></h1>
-                <p>Hi, I'm Johnny. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laboriosam distinctio ullam assumenda perspiciatis, odio sit, accusamus doloremque ratione repudiandae similique veritatis amet hic voluptatum eveniet modi fugit nulla ex.</p>
+                <p>Hi, I'm Johnny. Here's my profiles that you can review my work experience and education. I finished my bachelor degree of  Information Management and had worked in IT industry, mostly a role of software quality assurance and learnt how to cooperate with other team members and different clients and how a project progresses. After that I came to Australia in April 2010. Although my work history in Australia is not related to IT, I'm still passionate about software. So I decide to get my career back to IT industry and taking courses at JR academy in order to upgrade my IT skills, particularly arm to full-stack development. </p>
             </div>
-            <div class="info__contacts">
+            <div class="info__contacts col-md-6">
                 <ul class="info__list">
                     <li><span class="title">Residence</span><span class="value">Australia</span></li>
                     <li><span class="title">Location</span><span class="value">Brisbane, QLD</span></li>
                     <li><span class="title">Email</span><span class="value"><a href="mailto:johnny.chang358@gmail.com">johnny.chang358@gmail.com</a></span></li>
-                    <li><span class="title">Mobile</span><span class="value">0412-345-678</span></li>
+                    <li><span class="title">Mobile</span><span class="value">0479-124-525</span></li>
                 </ul>
             </div>
         </div>
@@ -60,5 +78,9 @@
         <span class="copyrights">© 2020 All rights reserved. Designed by <a href="#">J.Chang</a>
         </span>
     </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,109 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js);
+[class*="iconicfill-"]:before {
+  font-family: "jf-openhuninn", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "jf-openhuninn";
+  background: #4f3b5b;
+  background: radial-gradient(ellipse at center, #4f3b5b 0%, #231733 100%);
+}
+
+.wrap {
+  width: 300px;
+}
+
+input {
+  display: block;
+  width: 300px;
+  padding: 15px 0 15px 12px;
+  font-family: "jf-openhuninn";
+  font-weight: 400;
+  color: #377d6a;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  outline: none;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+  text-indent: 60px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  font-size: 13px;
+}
+
+input:focus {
+  text-indent: 12px;
+  -webkit-box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+label {
+  display: block;
+  position: static;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "jf-openhuninn";
+  font-size: 16px;
+}
+
+.wrap-label {
+  width: 300px;
+  height: 34px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  bottom: -15px;
+  overflow: hidden;
+}
+
+.iconicfill-pen-alt2 {
+  position: absolute;
+  left: 10px;
+  color: #fff;
+  font-size: 19px;
+  opacity: 1;
+  top: -2px;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+/* ==== Pen animation ==== */
+.move-pen {
+  -webkit-animation: move-pen 1s ease-in infinite alternate;
+          animation: move-pen 1s ease-in infinite alternate;
+}
+
+@-webkit-keyframes move-pen {
+  from {
+    -webkit-transform: translateX(-4px) rotate(6deg);
+            transform: translateX(-4px) rotate(6deg);
+  }
+  to {
+    -webkit-transform: translateX(4px) rotate(-3deg);
+            transform: translateX(4px) rotate(-3deg);
+  }
+}
+
+@keyframes move-pen {
+  from {
+    -webkit-transform: translateX(-4px) rotate(6deg);
+            transform: translateX(-4px) rotate(6deg);
+  }
+  to {
+    -webkit-transform: translateX(4px) rotate(-3deg);
+            transform: translateX(4px) rotate(-3deg);
+  }
+}
+/*# sourceMappingURL=label.css.map */
