@@ -7,14 +7,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="..\style\style.css">
-    <link rel="stylesheet" type="text/css" href="..\style\label.css">
+    <!-- <link rel="stylesheet" type="text/css" href="..\style\label.css"> -->
     <link rel="icon" href="image\favicon.ico" type="image/x-icon" />
     <title>Welcome to Johnny's website!!</title>
 </head>
-<body>
+<body id="">
     <!-- header and top navbar -->
     <header id="site__header" class="site__header">
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top site__content">
+        <nav id="gradient" class="navbar navbar-expand-lg navbar-light sticky-top site__content">
             <div class="site__title">
                 <h1>Johnny <span>Chang</span></h1>
             </div>
@@ -23,19 +23,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item active site__nav">
                         <a class="nav-link" href="..\index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item site__nav">
                         <a class="nav-link" href="..\resume.html">Rusume</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item site__nav">
                         <a class="nav-link" href="..\service.html">Services</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item site__nav">
                         <a class="nav-link" href="..\blog.html">Blog</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item site__nav">
                         <a class="nav-link" href="..\contact.html">Contact</a>
                     </li>
                 </ul>
@@ -58,10 +58,19 @@
                 </div>
                 <div class="">
                     <ul class="info__list">
-                        <li><span class="icons icon"><img src="image\icons8-marker-48.png" alt="pin"></span><span class="value">Brisbane, Queensland</span></li>
-                        <li><span class="icons icon"><img src="image\icons8-envelope-48.png" alt="email"></span><span class="value"><a href="mailto:johnny.chang358@gmail.com">johnny.chang358@gmail.com</a></span></li>
-                        <li><span class="icons icon"><img src="image\icons8-phone-48.png" alt="mobile"></span><span class="value">0479-124-525</span></li>
-                        <li><span class="icons icon"><img src="image\icons8-tick-box-48.png" alt="tick"></span><span class="value">Freelance Available</span></li>
+                        <li class="">
+                            <span class="icons icon"><img src="image\icons8-marker-48.png" alt="pin"></span>
+                            <span class="value">Brisbane, Queensland</span>
+                        </li>
+                        <li><span class="icons icon"><img src="image\icons8-envelope-48.png" alt="email"></span>
+                            <span class="value"><a href="mailto:johnny.chang358@gmail.com">johnny.chang358@gmail.com</a></span>
+                        </li>
+                        <li><span class="icons icon"><img src="image\icons8-phone-48.png" alt="mobile"></span>
+                            <span class="value">0479-124-525</span>
+                        </li>
+                        <li><span class="icons icon"><img src="image\icons8-tick-box-48.png" alt="tick"></span>
+                            <span class="value">Freelance Available</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -69,35 +78,34 @@
                 <div class="site__title info__title">
                     <h1 class="">Contact <span>Form</span></h1>
                 </div>
-                <div class="form">
-
-                    <div class="wrap"> <!-- Just to center ver and hor -->
-                        <div class="wrap-label">
-                           <label for="name">Your Name</label>
-                           <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
-                        </div>
-                        <input type="text" id="name" >
-                      </div>
-
-
-
-                    <i class="form__icon"></i>
-                    <label for="">Full Name</label>
-                    <input type="text" id="input_name" class="form" placeholder required="required" data-error="Name email is required.">
-                    <div class="form___border"></div>
-
-                    <i class="form__icon"></i>
-                    <label for="">Email Address</label>
-                    <input type="text" id="input_address" class="form" placeholder required="required" data-error="Valid email is required.">
-                    <div class="form___border"></div>
-
-                    <i class="form__icon"></i>
-                    <label for="">Message for Me</label>
-                    <textarea type="text" id="input_message" class="form" placeholder rows="4" required="required" data-error="Please leave your message."></textarea>
-                    <div class="form__border"></div>
-
-                    <input type="submit" class="" value="Send message">
+                <div class="input__items">
+                    <div class="input__itmes__right">
+                        <img class="icon" src="image\icons8-customer-48.png" alt="name">
+                    </div>
+                    <div class="form___border">
+                        <label class="input__level">Full Name</label>
+                        <input type="text" id="input_name" class="form" placeholder required="required" data-error="Name email is required.">
+                    </div>
                 </div>
+                <div class="input__items">
+                    <div class="input__itmes__right">
+                        <img class="icon" src="image\icons8-envelope-48.png" alt="mail">
+                    </div>
+                    <div class="form___border">
+                        <label class="input__level">Email Address</label>
+                        <input type="text" id="input_name" class="form" placeholder required="required" data-error="Name email is required.">
+                    </div>
+                </div>
+                <div class="input__items">
+                    <div class="input__itmes__right">
+                        <img class="icon" src="image\icons8-speech-48.png" alt="text">
+                    </div>
+                    <div class="form___border">
+                        <label class="input__level">Full Name</label>
+                        <textarea type="text" id="input_message" class="form" placeholder rows="5" required="required" data-error="Please leave your message."></textarea>
+                    </div>
+                </div>
+                <button class="btn btn-dark" type="button">Send Message</button>
             </div>
         </div>
     </div>
